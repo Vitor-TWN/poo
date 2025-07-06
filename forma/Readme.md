@@ -2,26 +2,43 @@
 classDiagram
     direction TD
     
+    Forma <.. Cor
+    Forma <|-- Circulo
+    Forma <|-- Linha
+    Forma <|-- Retangulo
+    
+
     
     class Forma {
-        -raio: int
+        -x: int
+        -y: int
+        -corLinha: Cor
+        -corPreenchimento: Cor
+        +desenhar(): String
+    }
+
+    class Cor {
+        -green: int
+        -red: int
+        -blue: int
     }
     
     class Linha{
-        -corLinha: String
-        +desenhar()
+        +desenhar(): String
     }
     
     class Circulo{
-        +desenhar()
+        -raio: double
+        +calcularArea(): double
+        +calcularPerimetro(): double
+        +desenhar(): String
     }
     
     class Retangulo{
-        -corPreenchimento: String
-        -x: int
-        -y: int
-        +calcularArea()
-        +calcularPerimetro()
-        +desenhar()
+        -altura: double
+        -largura: double
+        +calcularArea(): double
+        +calcularPerimetro(): double
+        +desenhar(): String
     }
 ```
