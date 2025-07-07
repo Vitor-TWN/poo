@@ -1,10 +1,10 @@
 package ads.poo;
 
-public class Forma {
-    private Cor corLinha;
-    private Cor corPreenchimento;
-    private int x;
-    private int y;
+public abstract class Forma {
+    public int x;
+    public int y;
+    public Cor corLinha;
+    public Cor corPreenchimento;
 
 
 
@@ -15,8 +15,6 @@ public class Forma {
         this.y = y;
     }
 
-    public String desenhar() {
-    }
+    public abstract String desenhar();
 
-    
 }

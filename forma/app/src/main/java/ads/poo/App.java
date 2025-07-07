@@ -4,11 +4,9 @@
 package ads.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+    Cor corLinha = new Cor(255, 0, 0);
+    Cor corPreenchimento = new Cor(0, 255, 0);
+
+    Linha l = new Linha(corLinha, corPreenchimento, 10, 20);
 }
