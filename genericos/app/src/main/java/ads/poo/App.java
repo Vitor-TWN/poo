@@ -45,6 +45,8 @@ public class App {
             }
         } while(true);
 
+
+        // finally: roda tudo o que está dentro do parametro
         vetor[posicao] = numero;
     }
 
